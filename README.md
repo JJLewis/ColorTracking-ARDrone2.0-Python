@@ -7,34 +7,34 @@ Follows a fairly large red object (a ball maybe) by rotating around in the air a
 Depenencies
 =================================
 
-• Python -> 2.7+ Not 3
-• Homebrew
-• OpenCV -> 2.4.9
-• PIP (Optional, but handy)
-• Python Imaging Library (PIL) -> 1.1.7+
-• Mock -> 1.0.1+
-• Numpy -> 1.7.1+ (May be installed with OpenCV)
-• ffmpeg
-• libardrone
+1. Python -> 2.7+ Not 3
+2. Homebrew
+3. OpenCV -> 2.4.9
+4. PIP (Optional, but handy)
+5. Python Imaging Library (PIL) -> 1.1.7+
+6. Mock -> 1.0.1+
+7. Numpy -> 1.7.1+ (May be installed with OpenCV)
+8. ffmpeg
+9. libardrone
 
 Usage
 =================================
-'''Bash
+```Bash
 python track-red.py
-'''
+```
 
 Todo
 =================================
--[x] Set up environment (Dependencies)
--[x] Proof of Concept Tracking with Computer Camera
--[x] Connect to the ARDrone
--[x] Get video from ARDrone in OpenCV Format
--[x] Find the largest Red Object
--[x] Track the Red Ball
--[x] Land if low on battery
--[x] Land action with keybinding Q
--[] Use PID (Proportional Integral Differentiation) to make adjustments smooth
--[] Make a take off action and a land action with key bindings T for takeoff and L for land
+- [x] Set up environment (Dependencies)
+- [x] Proof of Concept Tracking with Computer Camera
+- [x] Connect to the ARDrone
+- [x] Get video from ARDrone in OpenCV Format
+- [x] Find the largest Red Object
+- [x] Track the Red Ball
+- [x] Land if low on battery
+- [x] Land action with keybinding Q
+- [ ] Use PID (Proportional Integral Differentiation) to make adjustments smooth
+- [ ] Make a take off action and a land action with key bindings T for takeoff and L for land
 
 License
 =================================
