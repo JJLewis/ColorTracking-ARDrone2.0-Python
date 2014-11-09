@@ -2,6 +2,7 @@ RedBallTracking-ARDrone2.0-Python
 =================================
 
 Track a red ball with an ARDrone 2.0 through its camera.
+
 Follows a fairly large red object (a ball maybe) by rotating around in the air and ascending and descending.
 
 Depenencies
