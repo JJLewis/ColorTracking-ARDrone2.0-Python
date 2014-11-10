@@ -89,6 +89,10 @@ Todo
 - [ ] Use PID (Proportional Integral Differentiation) to make adjustments smooth
 - [ ] Make a take off action and a land action with key bindings T for takeoff and L for land
 
+Issues
+=================================
+1. - [ ] Inconsistent start up -> Logged as an issue, more detail there.
+
 Disclaimer
 =================================
 
