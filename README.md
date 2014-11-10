@@ -17,16 +17,16 @@ The following are not currently in the documentation but should be in the near f
 ```
 3. If you are getting warnings about battery percentage and the drone won't take off. Find the following section of code:
 ```Python
-        # Get battery status of the drone
+	# Get battery status of the drone
 	bat = drone.navdata.get(0, dict()).get('battery', 0)
 	#print str(bat)
 	if bat < 20:
 		running = False
 		print "Low Battery: "+str(bat)
 ```
-	Once you have found it. You can:
-	* Remove the whole section
-	* Comment out
+Once you have found it. You can:
+* Remove the whole section
+* Comment out
 ```Python
 running = False
 ```
@@ -34,10 +34,10 @@ or
 ```Python
 print "Low Battery: "+str(bat)
 ```
-	The first option will stop it from landing and disconnecting, and the second option will stop it from printing the warnings.
-	If you want to comment out both you, it must look like this:
+The first option will stop it from landing and disconnecting, and the second option will stop it from printing the warnings.
+If you want to comment out both you, it must look like this:
 ```Python
-# Get battery status of the drone
+	# Get battery status of the drone
 	bat = drone.navdata.get(0, dict()).get('battery', 0)
 	#print str(bat)
 	if bat < 20:
@@ -46,12 +46,12 @@ print "Low Battery: "+str(bat)
 		pass
 ```
 4. If you would like to change the target color of the object you are tracking, find the following lines of code near the top of the program:
-	```Python
-	TARGET_COLOR_MIN = np.array([0,100,100], np.uint8)
-	TARGET_COLOR_MAX = np.array([5,255,255], np.uint8)
-	```
-	Here, the values inside the square brackets are HSV values.
-	Note that in OpenCV the range is 'compressed' to 180 instead of 360, so find the Hue value range of the color you would like to track, halve it and replace the first numbers in the square brackets (the first values in the arrays). In this case replace 0 and 5.
+```Python
+TARGET_COLOR_MIN = np.array([0,100,100], np.uint8)
+TARGET_COLOR_MAX = np.array([5,255,255], np.uint8)
+```
+Here, the values inside the square brackets are HSV values.
+Note that in OpenCV the range is 'compressed' to 180 instead of 360, so find the Hue value range of the color you would like to track, halve it and replace the first numbers in the square brackets (the first values in the arrays). In this case replace 0 and 5.
 
 Depenencies
 =================================
