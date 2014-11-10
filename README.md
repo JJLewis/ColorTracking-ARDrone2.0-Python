@@ -10,12 +10,12 @@ Important Notes Before Continuing
 
 The following are not currently in the documentation but should be in the near future.
 
-1. Xcode Command Line Tools must be installed before anything else.
-2. If you are running into issues with being unable to import PIL.Image into the program, simply comment it out with a # as it is not longer required.
+* Xcode Command Line Tools must be installed before anything else.
+* If you are running into issues with being unable to import PIL.Image into the program, simply comment it out with a # as it is not longer required.
 ```Python
 # import PIL.Image
 ```
-3. If you are getting warnings about battery percentage and the drone won't take off. Find the following section of code:
+* If you are getting warnings about battery percentage and the drone won't take off. Find the following section of code:
 ```Python
 	# Get battery status of the drone
 	bat = drone.navdata.get(0, dict()).get('battery', 0)
@@ -45,7 +45,7 @@ If you want to comment out both you, it must look like this:
 		#print "Low Battery: "+str(bat)
 		pass
 ```
-4. If you would like to change the target color of the object you are tracking, find the following lines of code near the top of the program:
+* If you would like to change the target color of the object you are tracking, find the following lines of code near the top of the program:
 ```Python
 TARGET_COLOR_MIN = np.array([0,100,100], np.uint8)
 TARGET_COLOR_MAX = np.array([5,255,255], np.uint8)
