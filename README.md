@@ -1,9 +1,9 @@
-RedBallTracking-ARDrone2.0-Python
+ColorTracking-ARDrone2.0-Python
 =================================
 
-Track a red ball with an ARDrone 2.0 through its camera.
+Track an object with any preset color through the ARDrone 2.0's front camera.
 
-Follows a fairly large red object (a ball maybe) by rotating around in the air and ascending and descending.
+Follows a fairly large colored object (a ball maybe) by rotating around in the air and ascending and descending.
 
 Important Notes Before Continuing
 =================================
