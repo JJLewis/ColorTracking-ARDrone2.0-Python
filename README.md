@@ -5,6 +5,8 @@ Track an object with any preset color through the ARDrone 2.0's front camera.
 
 Follows a fairly large colored object (a ball maybe) by rotating around in the air and ascending and descending.
 
+More detail in the documentation. Note that is is not up to date, any updates will be placed below before being added to the documention.
+
 Important Notes Before Continuing
 =================================
 
@@ -55,12 +57,13 @@ The following are not currently in the documentation but should be in the near f
 	```
 	Here, the values inside the square brackets are HSV values.
 	Note that in OpenCV the range is 'compressed' to 180 instead of 360, so find the Hue value range of the color you would like to track, halve it and replace the first numbers in the square brackets (the first values in the arrays). In this case replace 0 and 5.
+5. If you have an issue with importing libardrone, try copying the libardrone folder from the downloaded folder from Github and place in the same directory as the tracking program.
 
 Depenencies
 =================================
 
 1. Xcode Command Line Tools
-2. Python -> 2.7+ Not 3
+2. Python -> 2.7+ Not 3.x
 3. Homebrew
 4. OpenCV -> 2.4.9
 5. PIP (Optional, but handy)
@@ -88,6 +91,7 @@ Todo
 - [x] Land action with keybinding Q
 - [ ] Use PID (Proportional Integral Differentiation) to make adjustments smooth
 - [ ] Make a take off action and a land action with key bindings T for takeoff and L for land
+- [ ] Move forward and backwards to stay at a certain distance from the object being tracked
 
 Issues
 =================================
