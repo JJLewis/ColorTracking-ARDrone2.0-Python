@@ -2,7 +2,6 @@ import numpy as np
 import cv2
 import sys
 import libardrone.libardrone as libardrone
-import PIL.Image as Image
 import time
 
 TARGET_COLOR_MIN = np.array([0,100,100], np.uint8)
